@@ -481,7 +481,7 @@ extension PlayMusicContrloller : AVAudioPlayerDelegate{
     
     //音频产生错误时
     func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
-        self.nextSong()
+        self.previousSong();
     }
     
     
@@ -1065,9 +1065,6 @@ extension PlayMusicContrloller{
             // Fallback on earlier versions
         }
     }
-    
-    
-    
     
     
     
